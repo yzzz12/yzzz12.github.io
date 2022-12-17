@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的课程</title>
+    <meta name="referrer" content="no-referrer" />
+    <link rel="stylesheet" href="../主页面/mainpage.css">
+    <link rel="stylesheet" href="./coursePage.css">
+    <link rel="stylesheet" href="../commmon-style.css">
+    <!-- 侧边栏图案icon -->
+    <link rel="stylesheet" type="text/css" href="../font/iconfont.css">    
+    <!-- 侧边栏脚本 -->
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.slimscroll.min.js"></script>
+    <script type="text/javascript" src="../js/left-side-menu.js"></script>
+
+    <!-- <link rel="stylesheet" href="../side-memu.css"> -->
+    <link rel="stylesheet" href="../top-menu.css">
+     
+</head>
+
+<body>
+     <!--顶栏-->
+     <div class="top" style="width: 100%;height: 70px;background-color: #3b3e47">
+		<ul class="top-bg">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+		<!-- <img src="../imgs/加号.png" alt="" class="addplan"> -->
+		<div id="light" class="addplan" >
+			
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+				x="0px" y="0px" viewBox="0 0 16 16" 
+				xml:space="preserve">
+				<g>
+					<path class="fill"
+						d="M16,8c0,0.5-0.5,1-1,1H9v6c0,0.5-0.5,1-1,1s-1-0.5-1-1V9H1C0.5,9,0,8.5,0,8s0.5-1,1-1h6V1c0-0.5,0.5-1,1-1s1,0.5,1,1v6h6C15.5,7,16,7.5,16,8z" />
+				</g>
+			</svg>
+
+		</div>
+	</div>
+
+    <!-- 全局遮蔽效果 -->
+    <div class="black_overlay" style="display: none;"></div>
+    <!-- 弹出框 -->
+    <div class="addBox" style="display: none;">
+        <table>
+            <tr>
+                <div class = 'link-header' id = "weblink" >
+                    <input type="text" placeholder="链接粘贴到此处" class="put curl" value="">
+                    
+                </div>
+                
+                <br>
+            </tr>
+            <tr>
+                <div class = 'link-header' id = "weblink" >
+                    <input type="text" placeholder="标题" class="put ctitle" value="">
+                </div>
+                <br>
+            </tr>
+            <tr>
+                <!-- <input type="text" placeholder="日期:0~7" class="day_select" value=""> -->
+                <!-- 日期选择按钮 -->
+                <div class = 'link-header' id = "weblink" >
+                    
+                    <div class="week-list">
+                        <span>选择日期</span>
+                        <div class="week-block" data-day="1" id="Mon">星期一</div>
+                        <div class="week-block" data-day="2" id="Tue">星期二</div>
+                        <div class="week-block" data-day="3" id="Wed">星期三</div>
+                        <div class="week-block" data-day="4" id="Thu">星期四</div>
+                        <div class="week-block" data-day="5" id="Fri">星期五</div>
+                        <div class="week-block" data-day="6" id="Sat">星期六</div>
+                        <div class="week-block" data-day="7" id="Sun">星期日</div>
+                    
+                    </div>
+                </div>
+            
+                <button class="submitPlan">添加
+                    <svg>
+                        <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+                    </svg>
+                </button>
+            </tr>
+        
+        </table>
+    </div>
+
+    <div class="planbody" style="justify-content:center;padding-left: 0;height: calc(100% - 71px);">
+        <div class="switch previous_c">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#758a99" stroke-width="3" stroke-linecap="butt" stroke-linejoin="round"><path d="M19 12H6M12 5l-7 7 7 7"/></svg>
+        </div>
+        <!-- <img src="../imgs/上一个.png" alt="" class="switch previous_c"> -->    
+        <div class="Box">
+
+        </div>
+        <div class="switch next_c">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#758a99" stroke-width="3" stroke-linecap="butt" stroke-linejoin="round"><path d="M5 12h13M12 5l7 7-7 7"/></svg>
+        </div>
+        <!-- <img src="../imgs/下一个.png" alt="" class="switch next_c"> -->
+        
+        <div class="date">
+            <button class="dbtn" data-day="1">周一</button>
+            <button class="dbtn" data-day="2">周二</button>
+            <button class="dbtn" data-day="3">周三</button>
+            <button class="dbtn" data-day="4">周四</button>
+            <button class="dbtn" data-day="5">周五</button>
+            <button class="dbtn" data-day="6">周六</button>
+            <button class="dbtn" data-day="7">周日</button>
+            <button class="sure">确定</button>
+            <button class="cancel">取消</button>
+        </div>
+
+        
+    </div>
+
+    <!--底边栏-->
+    <link rel="stylesheet" href="../style.css">
+
+    <div class="btn-container">
+
+        <a href="../主页面/mainpage.html" class="btn mainpage-btn">
+          <svg>
+            <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+          </svg>
+        首页
+        </a>
+        <!--svg hover inspired by https://codepen.io/karimbalaa/pen/qERbBY?editors=110 -->
+        <!--End of Button 1 -->
+        
+        <a id="choose" href="../我的课程/coursePage.html" class="btn coursepage-btn">
+            <svg>
+                <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+              </svg>
+              我的课程</a> 
+        <!--End of Button 2 -->
+        
+        
+        <a href="../个人信息/infoPage.html" class="btn infopage-btn">
+            <svg>
+                <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+              </svg>
+              个人信息</a> 
+        <!--End of Button 3 -->
+        
+    </div>
+    <script src="./coursePage.js"></script>
+    <script src="../js/AddPlan.js"></script>
+    <script src="../js/commmon.js"></script>
+</body>
+
+</html>

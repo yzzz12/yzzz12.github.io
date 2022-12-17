@@ -1,0 +1,233 @@
+.top{
+	display: flex;
+	justify-content: center;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.top .logo-block{
+    width: 20%;
+    height: inherit;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    background: #76daff;
+}
+
+
+.addplan{
+    width:50px;
+    height: 50px;
+    position: absolute;
+    top: 15px;
+    /*top: 15px; optional, it is so by default and right not needed as applied on parent! :D */
+    border:0px;
+    outline: 1rem snow;
+    border-color:transparent;
+    outline-style: 0px;
+    border-radius: 50%;
+    background: white;
+    cursor:pointer;
+    z-index: 101; /*to ensure its on top of container*/
+    box-shadow:  -2px 2px 5px rgba(41, 10, 77,.5);;
+    
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    -ms-appearance:none;
+    -o-appearance:none;
+    appearance:none;
+
+    background-color: #76daff;
+    transition: all 0.2s ease;
+    transform: rotate(0deg);
+}
+
+.addplan:hover {
+    /* background-color: transparent; */
+    background-color: #5ba8c4;
+    cursor: pointer;
+    box-shadow: none;
+}
+
+
+.black_overlay {
+    
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #222;
+    z-index: 100;
+    -moz-opacity: 0.8;
+    opacity: .80;
+    filter: alpha(opacity=78);
+}
+.week-list{
+    display: flex;
+    
+    width: 100%;
+    height: 80%;
+    justify-content: start;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+.week-list span{
+    align-self: center;
+}
+.week-list .week-block{
+    vertical-align: middle;
+    
+    top: 10%;
+    width: 10%;
+    height: 100%;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border-bottom-left-radius: 4px;
+
+    background: #fdfdfd;
+
+    border: 1px solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
+    outline: 1px solid;
+    outline-color: rgba(255, 255, 255, 0.5);
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.week-list .week-block:hover{
+    cursor: pointer;
+    background-color: #d5e7f6;
+
+    border: 2px solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px #427388;
+}
+
+.link-header{
+  
+    width: 80%;
+    height: 15%;
+    margin-left: 10%;
+    padding:15px;
+    z-index: 5;
+    background: #9ba9cb;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0 2px 8px rgba(41, 10, 77,.5);
+}
+
+.top-bg{
+    list-style: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    overflow: hidden;
+    z-index: 1;
+}
+.top-bg li{
+    width: 20px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+
+    animation: square 10s  infinite;
+}
+
+.top-bg li:nth-child(1){
+    top: 10px;
+    width:40px;
+    height: 40px;
+
+    animation-duration: 12s;
+}
+.top-bg li:nth-child(2){
+    top: 20px;
+    width: 20px;
+    height: 20px;
+
+    animation-duration: 15s;
+}
+.top-bg li:nth-child(3){
+    top: 30px;
+    width:30px;
+    height: 30px;
+    background-color: rgba(255,255,255,0.6);
+   
+    animation-duration: 20s;
+}
+.top-bg li:nth-child(4){
+    top: 40px;
+    width: 40px;
+    height: 40px;
+    animation-duration: 6s;
+    background-color: rgba(255,255,255,0.8);
+}
+
+.top-bg li:nth-child(5){
+    top: 20px;
+    width: 20px;
+    height: 20px;
+}
+
+.top-bg li:nth-child(6){
+    top: 25px;
+    width: 15px;
+    height: 15px;
+    animation-duration: 2s;
+}
+
+.top-bg li:nth-child(7){
+    top: 25px;
+    width: 22px;
+    height: 22px;
+    animation-duration: 7s;
+    animation-delay: 0.5s;
+}
+
+.top-bg li:nth-child(8){
+    top: 5px;
+    width: 18px;
+    height: 18px;
+    animation-duration: 5s;
+}
+
+.top-bg li:nth-child(9){
+    top: 5px;
+    width: 18px;
+    height: 18px;
+    
+    animation-duration: 5s;
+}
+
+
+/* 定义动画 */
+@keyframes square{
+    0%{
+        transform:translateX(0) ;
+    }
+    
+    100%{
+        transform: translateX(100vw) rotate(600deg);
+    }
+}

@@ -1,0 +1,226 @@
+.logo-block {
+
+  
+  transition: .3s all;
+
+}
+
+.logo-block:hover {
+    cursor: pointer;
+    background: #eee;
+}
+
+.logo-block:hover ~ .g-wrap {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: .3s background linear;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+p span {
+  position: relative;
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(15px) translateZ(0);
+  transition-property: transform, opacity;
+  transition-duration: .3s, .2s;
+  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1), linear;
+}
+
+.logo-block:hover ~ p span {
+  opacity: 1;
+  color: #ddd;
+  transform: translateY(0) translateZ(0);
+  transition-property: transform, opacity;
+  transition-duration: 1s, .2s;
+  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1), linear;
+}
+
+p span:after,
+p span:before {
+  position: absolute;
+  content: attr(data-text);
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transform: translateZ(0);
+  will-change: opacity;
+}
+
+p span:after {
+  color: #e62541;
+  transition-property: opacity;
+  transition-duration: .1s;
+  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.logo-block:hover ~ p span:after {
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: .4s;
+  transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+p span:nth-child(1) {
+  transition-delay: 0.04s;
+}
+
+p span:nth-child(1)::after {
+  transition-delay: 0.24s;
+}
+
+p span:nth-child(2) {
+  transition-delay: 0.08s;
+}
+
+p span:nth-child(2)::after {
+  transition-delay: 0.28s;
+}
+
+p span:nth-child(3) {
+  transition-delay: 0.12s;
+}
+
+p span:nth-child(3)::after {
+  transition-delay: 0.32s;
+}
+
+p span:nth-child(4) {
+  transition-delay: 0.16s;
+}
+
+p span:nth-child(4)::after {
+  transition-delay: 0.36s;
+}
+
+p span:nth-child(5) {
+  transition-delay: 0.2s;
+}
+
+p span:nth-child(5)::after {
+  transition-delay: 0.4s;
+}
+
+p span:nth-child(6) {
+  transition-delay: 0.24s;
+}
+
+p span:nth-child(6)::after {
+  transition-delay: 0.44s;
+}
+
+p span:nth-child(7) {
+  transition-delay: 0.28s;
+}
+
+p span:nth-child(7)::after {
+  transition-delay: 0.48s;
+}
+
+p span:nth-child(8) {
+  transition-delay: 0.32s;
+}
+
+p span:nth-child(8)::after {
+  transition-delay: 0.52s;
+}
+
+p span:nth-child(9) {
+  transition-delay: 0.36s;
+}
+
+p span:nth-child(9)::after {
+  transition-delay: 0.56s;
+}
+
+p span:nth-child(10) {
+  transition-delay: 0.4s;
+}
+
+p span:nth-child(10)::after {
+  transition-delay: 0.6s;
+}
+
+p span:nth-child(11) {
+  transition-delay: 0.44s;
+}
+
+p span:nth-child(11)::after {
+  transition-delay: 0.64s;
+}
+
+p span:nth-child(12) {
+  transition-delay: 0.48s;
+}
+
+p span:nth-child(12)::after {
+  transition-delay: 0.68s;
+}
+
+p span:nth-child(13) {
+  transition-delay: 0.52s;
+}
+
+p span:nth-child(13)::after {
+  transition-delay: 0.72s;
+}
+
+p span:nth-child(14) {
+  transition-delay: 0.56s;
+}
+
+p span:nth-child(14)::after {
+  transition-delay: 0.76s;
+}
+
+p span:nth-child(15) {
+  transition-delay: 0.6s;
+}
+
+p span:nth-child(15)::after {
+  transition-delay: 0.8s;
+}
+
+p span:nth-child(16) {
+  transition-delay: 0.64s;
+}
+
+p span:nth-child(16)::after {
+  transition-delay: 0.84s;
+}
+
+p span:nth-child(17) {
+  transition-delay: 0.68s;
+}
+
+p span:nth-child(17)::after {
+  transition-delay: 0.88s;
+}
+
+p span:nth-child(18) {
+  transition-delay: 0.72s;
+}
+
+p span:nth-child(18)::after {
+  transition-delay: 0.92s;
+}
+
+p span:nth-child(19) {
+  transition-delay: 0.76s;
+}
+
+p span:nth-child(19)::after {
+  transition-delay: 0.96s;
+}
+
+p span:nth-child(20) {
+  transition-delay: 0.8s;
+}
+
+p span:nth-child(20)::after {
+  transition-delay: 1s;
+}

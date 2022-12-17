@@ -1,0 +1,15 @@
+.opt{
+ position: relative;
+ width:100px;
+ height: 30px;
+ margin-left: 25px;
+ margin-right: 25px;
+ text-align: center;
+ line-height: 25px;
+ font-size: medium;
+ background-color: #fff;
+ bottom: 180px;
+ margin-top: 10px;
+ border-radius: 10px;
+}
+
